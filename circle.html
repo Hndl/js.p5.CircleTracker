@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<title>Circle</title>
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+	<script src="circle.js"></script>
+	<script type="text/javascript">
+		
+		
+		var cModel;
+		function setup() {
+ 			canvas = createCanvas(window.innerWidth-50, window.innerHeight-50);
+			cModel = new CircleModel(400);
+		}
+ 			
+		function draw() {
+		  	background(255);
+		  	cModel.update(mouseX, mouseY);  	
+		}
+
+
+
+	
+	</script>
+<body>
+
+</body>
+</html>
+
+
